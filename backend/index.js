@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://vercel.com/mukesh-s-projects-01da9b4f/login-authentication',
   credentials: true
 }));
 app.use(express.json());
