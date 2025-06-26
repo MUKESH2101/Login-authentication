@@ -7,13 +7,13 @@ export default function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('https://vercel.com/mukesh-s-projects-01da9b4f/login-authentication', { withCredentials: true })
+    axios.get('https://login-authentication-fs2m.onrender.com/api/auth/me', { withCredentials: true })
       .then(r => setU(r.data.user))
       .catch(() => setU(null));
   }, []);
 
   const lg = async () => {
-    await axios.post('https://vercel.com/mukesh-s-projects-01da9b4f/login-authentication', {}, { withCredentials: true });
+    await axios.post('https://login-authentication-fs2m.onrender.com/api/auth/logout', {}, { withCredentials: true });
     setU(null);
   };
 

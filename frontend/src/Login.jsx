@@ -13,7 +13,7 @@ export default function Login() {
     setLoading(true);
     setError('');
     try {
-      await axios.post('https://vercel.com/mukesh-s-projects-01da9b4f/login-authentication', data, { withCredentials: true });
+      await axios.post('https://login-authentication-fs2m.onrender.com', data, { withCredentials: true });
       navigate('/');
     } catch (err) {
       setError(err.response?.data?.message || 'Login failed');
