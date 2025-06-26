@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: 'login-authentication-xi.vercel.app',
+  origin: 'https://login-authentication-xi.vercel.app',
   credentials: true
 }));
 app.use(express.json());
